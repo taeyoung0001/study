@@ -1,5 +1,7 @@
 import CardContainer from "../components/CardContainer";
-import NaviBar from "../components/nav";
+
+//컨텍스트를 하나 만들어줌
+//컨텍스트는 스테이트 보관함임임
 
 const MainBg = () => {
   return (
@@ -12,8 +14,8 @@ const MainBg = () => {
 const Home = () => {
   return (
     <div>
-      <NaviBar />
       <MainBg />
+
       <CardContainer />
     </div>
   );

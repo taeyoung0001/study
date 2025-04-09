@@ -16,12 +16,14 @@
 .container {
   width: 100%;
   max-width: 600px;
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(3, 1fr);
+
   gap: 20px;
 }
 
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 .products {
   width: 100%;
   display: flex;
