@@ -1,10 +1,11 @@
-import { Outlet } from "react-router-dom";
+import useCounter from "../hooks/useLike";
 
 const About = () => {
+  const { count, increase } = useCounter({ initial: 10, step: 4 });
   return (
     <div>
-      About 페이지 입니다.
-      <Outlet></Outlet>
+      <h4>{count}</h4>
+      <button onClick={increase}>❤</button>
     </div>
   );
 };
